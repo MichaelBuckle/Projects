@@ -23,8 +23,6 @@
 # Use global variables
 # Use the word goto
 
-console.log('config.js');
-console.log('version 1');
 list = []
 
 def display():
