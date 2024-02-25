@@ -1,3 +1,28 @@
+# You are to design the following menu:   G] Get a number
+
+# S] Display current sum
+
+#A] Display current average
+
+# H] Display the current highest number
+
+# L] Display the current lowest number
+
+#D] Display all numbers entered
+
+# Q] Quit  
+
+# If the user enters G, S, A, H, L, or D before selecting G the program needs to advise the user to go and enter a number first. 
+
+# 1. Source code must use a dynamic list to store all numbers
+# 2. Source code must have a function for each of the menu options above (I guess even for quit too]
+# 3. Source code must not allow the user to do bad things(you can assume they will enter a number if 
+#   they press G or if you want to figure it out, yell at the user if he or she does not enter a number))
+
+# CANNOT:
+# Use global variables
+# Use the word goto
+
 console.log('config.js');
 console.log('version 1');
 list = []
