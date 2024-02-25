@@ -1,3 +1,28 @@
+
+# A student enters an exam score (as a floating-point value).  
+
+# The exam score must be between 0 and 100.  The program will enforce the domain of an exam score.
+#once the score has been validated, The program will display the score followed by the appropriate letter grade 
+# (assume a 10-point grading scale).
+#The score will be displayed as a floating-point number with one value to the right of the decimal point.
+# Score 89.9           Grade B
+
+
+#Once a score has been processed, the program will ask the user if he or she wishes to enter another grade.  
+#The program will continue entering grades until the user chooses to stop.  
+#Once the user selects stop, the program will display the following:
+
+#Highest Exam Score entered:  99.9
+
+#Lowest Exam Score entered:   99.9
+
+#Average Exam Score………..:   99.9
+
+#CANNOT:
+#Use global variables
+#Use the word goto
+
+
 exam = []
 
 def main():
