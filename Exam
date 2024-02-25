@@ -1,0 +1,86 @@
+exam = []
+
+def main():
+    cont = True
+    while cont == True: 
+        ente = float(input("enter a your test score between 1 and 100 "))
+        exam.append(ente)
+        ma = float(max(exam))
+        Mi = float(min(exam))
+        avg = float(sum(exam)/len(exam))
+        av = round(avg,2)
+        
+        if ente >= 0 and ente <= 100 :
+            if ente <= 100 and ente >= 90:
+                print(ente,"A")
+                cont = input( "do you want to add anoter score Y/N ").lower()
+                while cont == "y":
+                 cont = True
+                 
+                if cont =="n" :
+                   print(exam)
+                   print(" the highest score was", ma)
+                   print(" the lowest score was", Mi)
+                   print( " the aveage test score was", av)
+                   quit
+                
+                     
+            if ente <= 89 and ente >= 80: 
+                    print ( ente,"B")
+                    cont = input( "do you want to add anoter score Y/N ").lower()
+                    while cont == "y":
+                        cont = True
+                    if cont =="n" :
+                        print(exam)
+                        print(" the highest score was", ma)
+                        print(" the lowest score was", Mi)
+                        print( " the aveage test score was", av)
+                        end
+            
+            if ente <= 79 and ente >= 70: 
+                    print ( ente,"C")
+                    cont = input( "do you want to add anoter score Y/N ").lower()
+                    while cont == "y":
+                        cont = True
+                    if cont =="n" :
+                        print(exam)
+                        print(" the highest score was", ma)
+                        print(" the lowest score was", Mi)
+                        print( " the aveage test score was", av)
+                        quit
+            
+            if ente <= 69 and ente >= 60: 
+                    print ( ente,"D")
+                    cont = input( "do you want to add anoter score Y/N ").lower()
+                    while cont == "y":
+                        cont = True
+                    if cont =="n" :
+                        print(exam)
+                        print(" the highest score was", ma)
+                        print(" the lowest score was", Mi)
+                        print( " the aveage test score was", av)
+                        quit
+            
+            if ente <= 59 and ente >= 0: 
+                    print ( ente,"F")
+                    cont = input( "do you want to add anoter score Y/N ").lower()
+                    while cont == "y":
+                        cont = True
+                    if cont =="n" :
+                        print(exam)
+                        print(" the highest score was", ma)
+                        print(" the lowest score was", Mi)
+                        print( " the aveage test score was", av)
+                        quit
+
+
+          
+          
+            
+    
+        
+        
+    def end():
+        exit
+    
+main()

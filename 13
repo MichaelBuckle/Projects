@@ -1,0 +1,54 @@
+
+def main():
+    min = 0
+    high = 0
+    total = 0
+    avg = 0
+    count = 0
+    temp = 0
+   
+    while temp  != -999:
+        temp = float(input(" Enter the temperature in Fahrenheit "))
+        count += 1
+        if (count == 1):
+            low = temp
+            high = temp
+        if temp > high :
+            high = temp
+        if temp < low:
+            low = temp
+        total += temp
+        avg = total / count
+        out(temp,high,low,avg)
+        
+    
+    else:
+        print(" bye")
+       
+
+def out(temp,high,low,avg):
+    ce = float((temp-32) * 5/9 )
+    print( "current temperature: \t\t\t{0:.2f} F\t\t".format(temp), end = "")
+    print( "{0:.2f} C\t".format(ce))
+
+    ce = float((high-32) * 5/9 )
+    print( "Highest temperature: \t\t\t{0:.2f} F\t\t".format(high), end = "")
+    print( "{0:.2f} C\t".format(ce))
+
+    ce = float((low-32) * 5/9 )
+    print( "lowest temperature: \t\t\t{0:.2f} F\t\t".format(low), end = "")
+    print( "{0:.2f} C\t".format(ce))
+
+    ce = float((avg-32) * 5/9 )
+    print( "Average temperature: \t\t\t{0:.2f} F\t\t".format(avg), end = "")
+    print( "{0:.2f} C\t".format(ce))
+
+
+
+
+   
+        
+    
+
+
+main()
