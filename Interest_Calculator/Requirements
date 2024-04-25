@@ -1,0 +1,17 @@
+Write a program that lets the user enter the loan amount and loan period in number of years
+and displays the monthly and total payments for each interest rate starting from 5% to 8% with
+an increment of 1/8
+
+**********Sample Output************
+Enter loan amount,: 10000
+Enter number of years as an integer, for example, 3: 
+
+Interest Rate Monthly Payment Total Payment
+5.000%     299.71       10789.52
+5.125%     300.27       10809.74
+5.250%     300.83       10829.98
+5.375%      01.40       10850.24
+5.500%     301.96       10870.52
+5.625%     302.52       10890.83
+5.750%     303.09       10911.16
+
