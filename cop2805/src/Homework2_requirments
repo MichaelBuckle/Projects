@@ -1,0 +1,25 @@
+Create a static void method that takes an ArrayList as its input parameter and outputs each element of the ArrayList to the screen
+You can use this function as a template to get started: public static void PrintList(ArrayList list)
+You are required to iterate through the list. You may use an iterator or a for loop, but go through the list and print each item.
+Do not simply call System.out.println(list); This will not receive full credit.
+In the main method:
+Create an ArrayList of doubles
+Add the following values to the list in this order
+1.5 - First value
+2.35 - Second value
+-4.7 - Third value
+0.01 - Fourth value
+Print the list using the PrintList method designed in step 1.
+Sort the list by calling the Collections.sort method
+This method takes a single parameter, the list you want sorted.
+There is an option for a second parameter, the comparator function to use, but we aren't going to use it. Only pass one parameter to Collections.sort.
+Print the list again using the PrintList method
+Call the Collections.binarySearch method to search the list for the value 1.5.
+This method takes two parameters, the list you want to search and the value you want to search for (1.5 in this case).
+This method returns an integer value. This is the index of the item that was found.
+Print the index where 1.5 was found.
+Call the Collections.fill method to zero out the list.
+This method takes two parameters, the list you want to change and the value you want to fill it with (0.0 in this case).
+Print the list again using the PrintList method
+
+![Example](image.png)
