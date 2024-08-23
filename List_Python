@@ -1,0 +1,42 @@
+import random   
+list = []
+def main():
+   
+    x = 7
+    for i in range(x):
+        list.append(random.randint(0,6))
+    low = min(list)
+    high = max(list)
+    print(list)
+    print('the lowest number is' , low)
+    print('the highest number is' ,high)
+    print('the number', low,' appeared',count(list,low),'times')
+    print('the number', high,' appeared',count(list,high),'times')
+
+def count(list,low):
+    count = 0 
+    for ele in list :
+        if (ele == low):
+            count = count + 1
+    return count 
+        
+def count(list,high):
+    count = 0 
+    for ele in list :
+        if (ele == high):
+            count = count + 1
+    return count 
+    
+
+
+
+
+   
+    
+    
+    
+    
+    
+    
+    
+main()
