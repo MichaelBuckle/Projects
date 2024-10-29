@@ -82,10 +82,18 @@ def dele(list):
         return list
 
 def ad(list):
-    for i in range(len(list)):
-        x = 5 + i
-        list[i] = x
-    return list
+    list2 = [x + 5.5 for x in list]
+    list3 =[max(min(x, 100), 0) for x in list2]
+    
+    print(list3)
+       
+    
+    
+
+   
+            
+        
+     
     
         
 
@@ -94,7 +102,7 @@ def main():
    
     x = 20
     for i in range(x):
-        list.append(random.randint(80,90))
+        list.append(random.randint(85,99))
     low = min(list)
     high = max(list)
     print(list)
@@ -108,7 +116,7 @@ def main():
     print('There is ',gradeD(list),'D\'s')
     print('There is ',gradeF(list),'F\'s')
     print(dele(list))
-    print(ad(list))
+    ad(list)
         
 
     
