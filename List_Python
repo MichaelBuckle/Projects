@@ -15,77 +15,98 @@
 
 
 
-import random   
-list = []
+import random 
+import matplotlib.pyplot as plt
+list1 = []
 
 
-def count(list,low):
+def count(list1,low):
     count = 0 
-    for ele in list :
+    for ele in list1 :
         if (ele == low):
             count = count + 1
     return count 
         
-def count(list,high):
+def count(list1,high):
     count = 0 
-    for ele in list :
+    for ele in list1 :
         if (ele == high):
             count = count + 1
     return count 
 
-def gradeA(list):
+def gradeA(list1):
     A = 0
    
-    for ele in list:
+    for ele in list1:
         if( ele > 89):
             A = A + 1
     return A 
  
-def gradeB(list):
+def gradeB(list1):
     B = 0
    
-    for ele in list:
+    for ele in list1:
         if( ele > 79) and (ele < 90):
             B = B + 1
     return B 
  
-def gradeC(list):
+def gradeC(list1):
     C = 0
    
-    for ele in list:
+    for ele in list1:
         if( ele > 69) and (ele < 80):
             C = C + 1
     return C
 
-def gradeD(list):
+def gradeD(list1):
     D = 0
    
-    for ele in list:
+    for ele in list1:
         if( ele > 60) and (ele < 70):
             D = D + 1
     return D
          
-def gradeF(list):
+def gradeF(list1):
     F = 0
    
-    for ele in list:
+    for ele in list1:
         if( ele < 60) :
             F = F + 1
     return F      
 
 
 
-def dele(list):
-    for ele in list :
+def dele(list1):
+    for ele in list1 :
         if ele < 60:
-            list.remove(ele)
-        return list
+            list1.remove(ele)
+        return list1
 
-def ad(list):
-    list2 = [x + 5.5 for x in list]
+def ad(list1):
+    list2 = [x + 5.5 for x in list1]
     list3 =[max(min(x, 100), 0) for x in list2]
     
-    print(list3)
+   
+   
+   
+    list3_unique = list(set(list3))
+    
+    counts = [list3.count(value) for value in list3_unique]
+    barcontainer = plt.barh(range(len(list3_unique)),counts)
+    plt.bar_label(barcontainer,list3_unique, label_type='edge',)
+    plt.ylim((0., 100.))
+    
+    
+   
+    plt.axis('on')
+    
+   
+    plt.show()
+        
+
+
+    
+
        
     
     
@@ -100,23 +121,24 @@ def ad(list):
         
 def main():
    
-    x = 20
+    x = 500
     for i in range(x):
-        list.append(random.randint(85,99))
-    low = min(list)
-    high = max(list)
-    print(list)
+        list1.append(random.randint(0,100))
+    low = min(list1)
+    high = max(list1)
+    print(list1)
     print('the lowest number is' , low)
     print('the highest number is' ,high)
-    print('the number', low,' appeared',count(list,low),'times')
-    print('the number', high,' appeared',count(list,high),'times')
-    print('There is ',gradeA(list),'A\'s')
-    print('There is ',gradeB(list),'B\'s')
-    print('There is ',gradeC(list),'C\'s')
-    print('There is ',gradeD(list),'D\'s')
-    print('There is ',gradeF(list),'F\'s')
-    print(dele(list))
-    ad(list)
+    print('the number', low,' appeared',count(list1,low),'times')
+    print('the number', high,' appeared',count(list1,high),'times')
+    print('There is ',gradeA(list1),'A\'s')
+    print('There is ',gradeB(list1),'B\'s')
+    print('There is ',gradeC(list1),'C\'s')
+    print('There is ',gradeD(list1),'D\'s')
+    print('There is ',gradeF(list1),'F\'s')
+   
+    ad(list1)
+   
         
 
     
